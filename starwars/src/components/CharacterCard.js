@@ -6,16 +6,16 @@ import {
 } from "reactstrap";
 import InformationCard from "./InformationCard";
 
-const CharacterCard = ({ info }) => {
+const CharacterCard = (props) => {
 
 
     return (
         <Card>
-            <CardTitle>{info.name}</CardTitle>
-            <CardText>{info.height}</CardText>
-            <CardText>{info.mass}</CardText>
-            <CardText>{info.hair_color}</CardText>
-            <CardText>{info.skin_color}</CardText>
+            <CardTitle>{props.char.name}</CardTitle>
+            <CardText>{props.char.eye_color}</CardText>
+            <CardText>{props.char.hair_color}</CardText>
+            <CardText>{props.char.gender}</CardText>
+            <CardText>{props.char.mass}</CardText>
         </Card>
     )
 }

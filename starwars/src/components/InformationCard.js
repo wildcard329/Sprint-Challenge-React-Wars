@@ -5,15 +5,16 @@ import axios from "axios";
 
 
 function InformationCard(){
-    const [info, setInfo] = useState();
+    const [info, setInfo] = useState([]);
 
     useEffect(() => {
         axios.get('https://swapi.co/api/people')
             .then(response => {
                 console.log('flag',response.data)
-            setInfo(response.data);
+            setInfo(response.data.results);
 
                 console.log(response.data.results)
+                console.log(info)
              })
             .catch(error => {
                 console.log(error)
@@ -21,7 +22,7 @@ function InformationCard(){
            
     }, []);
     return (
-
+    <div>
         <Container>
             <Row>
                 {info.map(char => {
@@ -35,6 +36,8 @@ function InformationCard(){
                 })}
             </Row>
         </Container>
+    </div>
+
         
     )
 }
