@@ -10,7 +10,7 @@ function InformationCard(){
     useEffect(() => {
         axios.get('https://swapi.co/api/people')
             .then(response => {
-                console.log('flag',response.data)
+                console.log('flag',response.data.url)
             setInfo(response.data.results);
 
                 console.log(response.data.results)
