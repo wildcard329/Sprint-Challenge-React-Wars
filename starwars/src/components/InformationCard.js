@@ -4,12 +4,12 @@ import axios from "axios";
 
 
 function InformationCard(){
-    const [info, setInfo] = useState([]);
+    const [info, setInfo] = useState();
 
     useEffect(() => {
         axios.get('https://swapi.co/api/people')
             .then(response => {
-                console.log(response.data)
+                console.log('aaaaaaa',response)
             setInfo(response.data.results);
 
                 console.log(response.data.results)
@@ -21,15 +21,8 @@ function InformationCard(){
     }, []);
     return (
         
-        <div>
-            info.forEach(result => { 
-            <CharacterCard
-                    key={info.name}
-                    title={info.name}
-                
-                    />
-                })
-        </div>
+        <>
+        </>
         
     )
 }
