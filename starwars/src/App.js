@@ -1,4 +1,5 @@
 import React from 'react';
+import InformationCard from "./components/InformationCard";
 import './App.css';
 
 const App = () => {
