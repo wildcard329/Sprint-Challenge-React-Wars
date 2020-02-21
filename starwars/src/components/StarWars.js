@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import CardMaker from './CardMaker';
-import './StarWars.css';
+import { Container, Row } from 'reactstrap';
 
 export default function StarWars() {
     const [data, setData] = useState([])
@@ -17,10 +17,12 @@ export default function StarWars() {
         })
     }, [])
     return (
-        <div>
-            {data.map((card, index) => (
-                <CardMaker key={index} card={card} />
-            ))}
-        </div>
+        <Container>
+            <Row>
+                {data.map((card, index) => (
+                    <CardMaker key={index} card={card} />
+                ))}
+            </Row>
+        </Container>
     )
 }

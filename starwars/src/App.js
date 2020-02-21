@@ -1,6 +1,7 @@
 import React from 'react';
 import StarWars from './components/StarWars';
 import './App.css';
+import SearchForm from './components/SearchForm';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <StarWars />
+      {/* <StarWars /> */}
+      <SearchForm />
     </div>
   );
 }
