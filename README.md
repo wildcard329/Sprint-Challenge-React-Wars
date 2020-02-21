@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+	React is a library developed by Facebook which tries to resolve the issue of developing large applications with temporal data changes.
+
 - [ ] What does it mean to _think_ in react?
+
+	Thinking in React means to break the program down into reusable components.
 
 - [ ] Describe state.
 
+	State is a variable which stores the data of components.
+
 - [ ] Describe props.
 
+	Props are variables which store data and are passed between components.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+	Side effects are anything that affects something outside the scope of the current function being executed. In terms of what we've learned so far, we can mitigate these side effects with a dependency array in our axios call.
+
+	
 
 ## Project Set Up
 

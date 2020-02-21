@@ -25,7 +25,7 @@ export default function SearchForm() {
                     type="text"
                     value={search}
                     id="query"
-                    placeholder="search"
+                    placeholder="search for character..."
                     onChange={handleChange}
                 />
             </form>

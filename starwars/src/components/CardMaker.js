@@ -1,25 +1,26 @@
 import React from 'react';
-import {Card, CardTitle, CardSubtitle} from 'reactstrap';
 import styled from 'styled-components';
 
 export default function CardMaker({card}) {
+
     const CustomDiv = styled.div `
         background: grey;
         color: white;
         margin: 5%;
-        width: 20%;
+        width: 10%;
+        border-radius: 20%;
     `
 
     return (
         <CustomDiv>
-            <Card>
-                <CardTitle>Name: {card.name}</CardTitle>
-                <CardSubtitle>Gender: {card.gender}</CardSubtitle>
-                <CardSubtitle>Eye Color: {card.eye_color}</CardSubtitle>
-                <CardSubtitle>Skin Color: {card.skin_color}</CardSubtitle>
-                <CardSubtitle>Height: {card.height}</CardSubtitle>
-                <CardSubtitle>Mass: {card.mass}</CardSubtitle>
-            </Card>
+            <div>
+                <h1>Name: {card.name}</h1>
+                <p>Gender: {card.gender}</p>
+                <p>Eye Color: {card.eye_color}</p>
+                <p>Skin Color: {card.skin_color}</p>
+                <p>Height: {card.height}</p>
+                <p>Mass: {card.mass}</p>
+            </div>
         </CustomDiv>
     )
 }
